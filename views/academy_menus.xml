@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="academy_root"
+        name="Open Academy"
+        web_icon="static/description/icon.png"
+        sequence="55"/>
+
+    <menuitem id="academy_masterdata"
+        name="Master Data"
+        parent="academy_root"
+        sequence="10"/>
+    <menuitem id="academy_session"
+              name="Sessions"
+              parent="academy_masterdata"
+              sequence="20"/>
+    <menuitem id="academy_session"
+          name="Sessions"
+          action="academy_sessions_action"
+          parent="academy_masterdata"
+          sequence="20"/>
+
+</odoo>

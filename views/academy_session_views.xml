@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="academy_session_tree_view" model="ir.ui.view">
+            <field name="name">Academy Sessions</field>
+            <field name="model">academy.session</field>
+            <field name="arch" type="xml">
+                <tree string="Academy Sessions" >
+                    <field name="name"/>
+                    <field name="priority"/>
+                </tree>
+            </field>
+        </record>
+        <record id="academy_session_form_view" model="ir.ui.view">
+            <field name="name">Academy Session Form</field>
+            <field name="model">academy.session</field>
+            <field name="arch" type="xml">
+                <form string="Academy Session" >
+                    <field name="name"/>
+                    <field name="priority"/>
+                </form>
+            </field>
+        </record>
+        <record id="academy_sessions_action" model="ir.actions.act_window">
+            <field name="name">Sessions</field>
+            <field name="res_model">academy.session</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+    </data>
+</odoo>
